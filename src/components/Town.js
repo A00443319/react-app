@@ -76,7 +76,7 @@ class Town extends Component {
               </span>
             ) : (
               <span>
-                {this.state.temp * (9 / 5) + 32} <sup>o</sup>F
+                {Math.floor(this.state.temp * (9 / 5) + 32)} <sup>o</sup>F
               </span>
             )}
           </p>

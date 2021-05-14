@@ -14,7 +14,7 @@ class Town extends Component {
   //fetches data from openweatherAPI
   fetchData() {
     fetch(
-      "https://api.openweathermap.org/data/2.5/weather?id=6324729&appid=453bbd38d15c60bd2ff22e9460398027&units=metric"
+      "https://api.openweathermap.org/data/2.5/weather?id={API_KEY}&units=metric"
     )
       .then((response) => {
         return response.json();
